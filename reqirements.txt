@@ -1,0 +1,9 @@
+opencv-python
+pillow
+PyYaml
+requests
+scipy
+torch
+torchvision
+matplotlib
+tqdm
