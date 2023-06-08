@@ -1,10 +1,9 @@
 #!/bin/bash
 
 TAG=$1
-PROJECT_DIR="preprocess"
 
-git clone <ssh github url>
-cd <github repository>/<project name>
+git clone https://github.com/RearFold/RearFold-dvc.git
+cd RearFold-dvc/project1
 git checkout $TAG
 if [ $? -eq 0 ];then
   echo overwrite tag
@@ -14,3 +13,5 @@ else
   echo create new tag
 fi
 # 조건문 종료
+
+dvc pull
